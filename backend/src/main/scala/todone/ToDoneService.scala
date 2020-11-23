@@ -35,5 +35,8 @@ object ToDoneService {
             )
           )
         Ok(tasks)
+      
+      case POST -> Root / "api" / "task" / IdVar(id) / "close" =>
+      Ok("It Works")
     }
 }
